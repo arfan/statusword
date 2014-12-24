@@ -6,9 +6,8 @@
 package statusword;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.InputStreamReader;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 /**
@@ -17,7 +16,7 @@ import java.util.StringTokenizer;
  */
 public class StatusWord {
 
-    Hashtable<String, String> table = new Hashtable<String, String>();
+    HashMap<String, String> table = new HashMap<String, String>();
     public StatusWord() {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(StatusWord.class.getResourceAsStream("listerror")));
@@ -27,7 +26,7 @@ public class StatusWord {
             while((line=reader.readLine())!=null) {
                 StringTokenizer token = new StringTokenizer(line, "/");
                 
-                String sw1sw2=null, type=null, desc=null;
+                String sw1sw2, type, desc;
                 
                 try {
                     sw1sw2 = token.nextToken().trim();
@@ -43,7 +42,7 @@ public class StatusWord {
                 }
             }
         } catch(Exception e) {
-            e.printStackTrace();
+            System.err.println(e);
         }
     }
     /**
