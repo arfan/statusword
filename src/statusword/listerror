@@ -1,0 +1,208 @@
+6E00/E/Class not supported.
+61--I/	/Response bytes still available
+61XX/I/Command successfully executed; 'XX' bytes of data are available and can be requested using GET RESPONSE.
+62--/W/State of non-volatile memory unchanged
+6200/W/	No information given (NV-Ram not changed)
+6201/W/	NV-Ram not changed 1.
+6281/W/	Part of returned data may be corrupted
+6282/W/	End of file/record reached before reading Le bytes
+6283/W/	Selected file invalidated
+6284/W/	Selected file is not valid. FCI not formated according to ISO
+6285/W/	No Purse Engine enslaved for R3bc
+62A2/W/	Wrong R-MAC
+62A4/W/	Card locked (during reset( ))
+62CX//	Counter with value x (command dependent)
+62F1/W/	Wrong C-MAC
+62F3/W/	Internal reset
+62F5/W/	Default agent locked
+62F7/W/	Cardholder locked
+62F8/W/	Basement is current agent
+62F9/W/	CALC Key Set not unblocked
+62FX/W/	-
+62XX//	RFU
+63--/W/State of non-volatile memory changed
+6300/W/	No information given (NV-Ram changed)
+6381/W/	File filled up by the last write. Loading/updating is not allowed.
+6382/W/	Card key not supported.
+6383/W/	Reader key not supported.
+6384/W/	Plaintext transmission not supported.
+6385/W/	Secured transmission not supported.
+6386/W/	Volatile memory is not available.
+6387/W/	Non-volatile memory is not available.
+6388/W/	Key number not valid.
+6389/W/	Key length is not correct.
+63C0/W/	Verify fail, no try left.
+63C1/W/	Verify fail, 1 try left.
+63C2/W/	Verify fail, 2 tries left.
+63C3/W/	Verify fail, 3 tries left.
+63CX//	The counter has reached the value �x� (0 = x = 15) (command dependent).
+63FX/W/	-
+63XX//	RFU
+64--/E/State of non-volatile memory unchanged
+6400/E/No information given (NV-Ram not changed)
+6401/E/Command timeout.
+64XX/E/	RFU
+65--/E/State of non-volatile memory changed
+6500/E/No information given
+6501/E/Write error. Memory failure. There have been problems in writing or reading the EEPROM. Other hardware problems may also bring this error.
+6581/E/Memory failure
+65FX/E/-
+65XX/E/	RFU
+66--/S/ 
+6669/S/Incorrect Encryption/Decryption Padding
+66XX/S/	-
+67--/E/ 
+6700/E/Wrong length
+67XX/E/	length incorrect (procedure)(ISO 7816-3)
+68--/E/Functions in CLA not supported
+6800/E/No information given (The request function is not supported by the card)
+6881/E/Logical channel not supported
+6882/E/Secure messaging not supported
+6883/E/Last command of the chain expected
+6884/E/Command chaining not supported
+68FX/E/-
+68XX/E/	RFU
+69--/E/Command not allowed
+6900/E/No information given (Command not allowed)
+6981/E/Command incompatible with file structure
+6982/E/Security condition not satisfied.
+6983/E/Authentication method blocked
+6984/E/Referenced data reversibly blocked (invalidated)
+6985/E/Conditions of use not satisfied
+6986/E/Command not allowed (no current EF)
+6987/E/Expected secure messaging (SM) object missing
+6988/E/Incorrect secure messaging (SM) data object
+6996/E/Data must be updated again
+69F0/E/Permission Denied
+69F1/E/Permission Denied - Missing Privilege
+69FX/E/-
+69XX/E/	RFU
+6A--/E/Wrong parameter(s) P1-P2
+6A00/E/No information given (Bytes P1 and/or P2 are incorrect)
+6A80/E/The parameters in the data field are incorrect.
+6A81/E/Function not supported
+6A82/E/File not found
+6A83/E/Record not found
+6A84/E/There is insufficient memory space in record or file
+6A85/E/Lc inconsistent with TLV structure
+6A86/E/Incorrect P1 or P2 parameter.
+6A87/E/Lc inconsistent with P1-P2
+6A88/E/Referenced data not found
+6A89/E/File already exists
+6A8A/E/DF name already exists.
+6AF0/E/Wrong parameter value
+6AFX/E/-
+6AXX/E/	RFU
+6B--/E/ 
+6B00/E/Wrong parameter(s) P1-P2
+6BXX/E/	Reference incorrect (procedure byte), (ISO 7816-3)
+6C--/E/Wrong length Le
+6C00/E/Incorrect P3 length.
+6CXX/E/	Bad length value in Le; 'xx' is the correct exact Le
+6D--/E/ 
+6D00/E/Instruction code not supported or invalid
+6DXX/E/	Instruction code not programmed or invalid (procedure byte), (ISO 7816-3)
+6E--/E/ 
+6E00/E/Class not supported
+6EXX/E/	Instruction class not supported (procedure byte), (ISO 7816-3)
+6F--/E/Internal exception
+6F00/E/Command aborted - more exact diagnosis not possible (e.g., operating system error).
+6FFF/E/Card dead (overuse, �)
+6FXX/E/	No precise diagnosis (procedure byte), (ISO 7816-3)
+9--- /	/ 
+9000/I/Command successfully executed (OK).
+9004/W/	PIN not succesfully verified, 3 or more PIN tries left
+9008/ /Key/file not found
+9080/W/	Unblock Try Counter has reached zero
+9101/ /States.activity, States.lock Status or States.lockable has wrong value
+9102/ /Transaction number reached its limit
+920x/I/Writing to EEPROM successful after 'x' attempts.
+9210/E/Insufficient memory. No more storage available.
+9240/E/Writing to EEPROM not successful.
+9301/ /Integrity error
+9302/ /Candidate S2 invalid
+9400/E/No EF selected.
+9401/ /Candidate currency code does not match purse currency
+9402/ /Candidate amount too high
+9402/E/Address range exceeded.
+9403/ /Candidate amount too low
+9404/E/FID not found, record not found or comparison pattern not found.
+9405/ /Problems in the data field
+9407/ /Bad currency : purse engine has no slot with R3bc currency
+9408/ /R3bc currency not supported in purse engine
+9408/E/Selected file type does not match command.
+9580/ /Bad sequence
+9681/ /Slave not found
+9700/ /PIN blocked and Unblock Try Counter is 1 or 2
+9702/ /Main keys are blocked
+9704/ /PIN not succesfully verified, 3 or more PIN tries left
+9784/ /Base key
+9785/ /Limit exceeded - C-MAC key
+9786/ /SM error - Limit exceeded - R-MAC key
+9787/ /Limit exceeded - sequence counter
+9788/ /Limit exceeded - R-MAC length
+9789/ /Service not available
+9802/E/No PIN defined.
+9804/E/Access conditions not satisfied, authentication failed.
+9835/E/ASK RANDOM or GIVE RANDOM not executed.
+9840/E/PIN verification not successful.
+9850/E/INCREASE or DECREASE could not be executed because a limit has been reached.
+9900/ /1 PIN try left
+9904/ /PIN not succesfully verified, 1 PIN try left
+9985/ /Wrong status - Cardholder lock
+9986/E/Missing privilege
+9987/ /PIN is not installed
+9988/ /Wrong status - R-MAC state
+9A00/ /2 PIN try left
+9A04/ /PIN not succesfully verified, 2 PIN try left
+9A71/ /Wrong parameter value - Double agent AID
+9A72/ /Wrong parameter value - Double agent Type
+9D05/E/Incorrect certificate type
+9D07/E/Incorrect session data size
+9D08/E/Incorrect DIR file record size
+9D09/E/Incorrect FCI record size
+9D0A/E/Incorrect code size
+9D10/E/Insufficient memory to load application
+9D11/E/Invalid AID
+9D12/E/Duplicate AID
+9D13/E/Application previously loaded
+9D14/E/Application history list full
+9D15/E/Application not open
+9D17/E/Invalid offset
+9D18/E/Application already loaded
+9D19/E/Invalid certificate
+9D1A/E/Invalid signature
+9D1B/E/Invalid KTU
+9D1D/E/	MSM controls not set
+9D1E/E/Application signature does not exist
+9D1F/E/KTU does not exist
+9D20/E/Application not loaded
+9D21/E/Invalid Open command data length
+9D30/E/Check data parameter is incorrect (invalid start address)
+9D31/E/Check data parameter is incorrect (invalid length)
+9D32/E/Check data parameter is incorrect (illegal memory check area)
+9D40/E/Invalid MSM Controls ciphertext
+9D41/E/MSM controls already set
+9D42/E/Set MSM Controls data length less than 2 bytes
+9D43/E/Invalid MSM Controls data length
+9D44/E/Excess MSM Controls ciphertext
+9D45/E/Verification of MSM Controls data failed
+9D50/E/Invalid MCD Issuer production ID
+9D51/E/Invalid MCD Issuer ID
+9D52/E/Invalid set MSM controls data date
+9D53/E/Invalid MCD number
+9D54/E/Reserved field error
+9D55/E/Reserved field error
+9D56/E/Reserved field error
+9D57/E/Reserved field error
+9D60/E/MAC verification failed
+9D61/E/Maximum number of unblocks reached
+9D62/E/Card was not blocked
+9D63/E/Crypto functions not available
+9D64/E/No application loaded
+9E00/ /PIN not installed
+9E04/ /PIN not succesfully verified, PIN not installed
+9F00/ /PIN blocked and Unblock Try Counter is 3
+9F04/ /PIN not succesfully verified, PIN blocked and Unblock Try Counter is 3
+9FXX/ /Command successfully executed; 'xx' bytes of data are available and can be requested using GET RESPONSE.
+9XXX/ /Application related status, (ISO 7816-3)
